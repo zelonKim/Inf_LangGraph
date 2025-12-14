@@ -1,4 +1,6 @@
 chroma/
 stage1/
 stage2/
+streamlit/
+__pycache__/
 .env
