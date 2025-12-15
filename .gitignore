@@ -2,5 +2,7 @@ chroma/
 stage1/
 stage2/
 streamlit/
+.venv/
 __pycache__/
 .env
+

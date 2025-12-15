@@ -24,11 +24,17 @@ if user_question := st.chat_input(placeholder="소득세에 관련된 궁금한 
         st.write(user_question)
     st.session_state.message_list.append({"role":"user", "content":user_question}) # 저장 공간에 사용자의 질문을 기록함.
     
+    
+    
+    
     with st.spinner("답변을 생성하는 중입니다..."): # 답변을 생성하는 동안 로딩 스피너를 화면에 출력함.
         ai_response = get_ai_response(user_question)
         
+        
+        
+        
         with st.chat_message("ai"):
-            ai_message = st.write_stream(ai_response)
+            ai_message = st.write_stream(ai_response) # 스트리밍 데이터를 실시간으로 화면에 출력함.
         st.session_state.message_list.append({"role":"ai", "content":ai_message})
         
     
