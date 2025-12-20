@@ -6,5 +6,6 @@ stage2/
 streamlit/
 .venv/
 __pycache__/
+google/
 .env
 
